@@ -29,7 +29,7 @@ class Task extends Model
 
     public function project(): BelongsTo
     {
-        return $this->belongs(Project::class, 'project_id');
+        return $this->belongsTo(Project::class, 'project_id');
     }
 
     protected static function booted(): void
